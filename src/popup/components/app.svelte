@@ -6,6 +6,7 @@
   import Switch from '@smui/switch'
   import FormField from '@smui/form-field'
   import Select, { Option } from '@smui/select'
+  import Textfield from '@smui/textfield'
   import Chip, { Set, Text } from '@smui/chips'
   import MD_PLUGINS from '@/config/md-plugins'
   import PAGE_THEMES from '@/config/page-themes'
@@ -104,6 +105,17 @@
           ><Text>{localize(chip)}</Text></Chip
         >
       </Set>
+    </div>
+
+    <div class="form-item">
+      <div class="label-item">{localize('label_plantuml-server')}:</div>
+      <FormField style="padding-left: 10px">
+        <Textfield
+          disabled={!data.enable}
+          bind:value={data.plantumlServer}
+          on:blur={() => updateConfig('plantumlServer', data.plantumlServer)}
+        />
+      </FormField>
     </div>
 
     <div class="form-item">

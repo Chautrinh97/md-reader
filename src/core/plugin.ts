@@ -19,9 +19,6 @@ export function usePlugin(plugin: Plugin | Array<Plugin>) {
   }
 }
 
-export function initPlugins({ event }: { event: Event }) {
-  const ctx: Ctx = {
-    event,
-  }
+export function initPlugins(ctx: Ctx) {
   plugins.forEach(p => p(ctx))
 }

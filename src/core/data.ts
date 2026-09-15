@@ -10,7 +10,10 @@ export interface Data {
   mdPlugins?: typeof MD_PLUGINS
   pageTheme?: typeof PAGE_THEMES[0]
   hiddenSide?: boolean
+  plantumlServer?: string
 }
+
+export const DEFAULT_PLANTUML_SERVER = 'https://www.plantuml.com/plantuml'
 
 export function getDefaultData(mergeData: Data = {}): Data {
   return {
@@ -21,6 +24,7 @@ export function getDefaultData(mergeData: Data = {}): Data {
     language: i18n().locale,
     mdPlugins: [...MD_PLUGINS],
     pageTheme: PAGE_THEMES[0],
+    plantumlServer: DEFAULT_PLANTUML_SERVER,
     ...mergeData,
   }
 }

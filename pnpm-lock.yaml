@@ -34,9 +34,15 @@ importers:
       '@smui/switch':
         specifier: ^4.2.0
         version: 4.2.0
+      '@smui/textfield':
+        specifier: ^4.2.0
+        version: 4.2.0
       '@traptitech/markdown-it-katex':
         specifier: ^3.6.0
         version: 3.6.0
+      '@viz-js/viz':
+        specifier: ^3.27.0
+        version: 3.30.0
       highlight.js:
         specifier: ^11.6.0
         version: 11.6.0
@@ -85,6 +91,9 @@ importers:
       markdown-it-task-lists:
         specifier: ^2.1.1
         version: 2.1.1
+      plantuml-encoder:
+        specifier: ^1.4.0
+        version: 1.4.0
       svelte:
         specifier: ^3.50.0
         version: 3.50.0
@@ -104,6 +113,9 @@ importers:
       '@types/node':
         specifier: ^18.7.14
         version: 18.7.14
+      '@types/plantuml-encoder':
+        specifier: ^1.4.2
+        version: 1.4.2
       archiver:
         specifier: ^5.3.1
         version: 5.3.1
@@ -359,6 +371,12 @@ packages:
         integrity: sha512-xrEMHtVhDJBXSAKnYubWSFJ0Yo+W6Yi1C9xcS5jqSU2G1FoxKiOWIcM8actlcHqspMC7AWh7fDz8LJVpugGctw==,
       }
 
+  '@material/textfield@11.0.0':
+    resolution:
+      {
+        integrity: sha512-7GwZCJplxQpdExNO8K3IOPH/SniCd4bcvOuKGYWjW1irOLYVX2Om0e7X2q70XWvD/B85Rb8ZaPXqx3EJiwNrvQ==,
+      }
+
   '@material/theme@11.0.0':
     resolution:
       {
@@ -514,6 +532,12 @@ packages:
         integrity: sha512-PZPPtLku+RsQsbdLbpqyLcpM314F1f37TdyNfgPz4sGE32o7jkkldbMzNaWSlr3eoUo6BkEXs5hrDpPMpe6Ciw==,
       }
 
+  '@smui/textfield@4.2.0':
+    resolution:
+      {
+        integrity: sha512-4RxvxcabtPrlYiHddsF/uFjOZhA3qA/W17HyiccTKxfHpZWOxxnZvCE4CDs8LyckEvz73fSUTQOb4pqd2Of02g==,
+      }
+
   '@traptitech/markdown-it-katex@3.6.0':
     resolution:
       {
@@ -628,6 +652,12 @@ packages:
         integrity: sha512-6bbDaETVi8oyIARulOE9qF1/Qdi/23z6emrUh0fNJRUmjznqrixD4MpGDdgOFk5Xb0m2H6Xu42JGdvAxaJR/wA==,
       }
 
+  '@types/plantuml-encoder@1.4.2':
+    resolution:
+      {
+        integrity: sha512-R60SYlcXyTXQebyVwcarGSJUucuwYY5wetBWAOnRt3k52flBXgt4R1KrxaZ4xpk5MpVo9titpVBBhgl/A9JWRQ==,
+      }
+
   '@types/pug@2.0.6':
     resolution:
       {
@@ -656,6 +686,12 @@ packages:
     resolution:
       {
         integrity: sha512-4nZOdMwSPHZ4pTEZzSp0AsTM4K7Qmu40UKW4tJDiOVs20UzYF9l+qUe4s0ftfN0pin06n+5cWWDJXH+sbhAiDw==,
+      }
+
+  '@viz-js/viz@3.30.0':
+    resolution:
+      {
+        integrity: sha512-2zmcP55QY44uQfZ+GvgNHmGd8S6KUD+2eMur9AbYybSzrOd/m8nMUg0ZircJNiJRKGgVBKAE8kh0hAwpUFUFQQ==,
       }
 
   '@webassemblyjs/ast@1.11.1':
@@ -3528,6 +3564,12 @@ packages:
       }
     engines: { node: '>=8' }
 
+  plantuml-encoder@1.4.0:
+    resolution:
+      {
+        integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==,
+      }
+
   postcss-modules-extract-imports@3.0.0:
     resolution:
       {
@@ -4777,6 +4819,23 @@ snapshots:
       '@material/theme': 11.0.0
       tslib: 2.4.0
 
+  '@material/textfield@11.0.0':
+    dependencies:
+      '@material/animation': 11.0.0
+      '@material/base': 11.0.0
+      '@material/density': 11.0.0
+      '@material/dom': 11.0.0
+      '@material/feature-targeting': 11.0.0
+      '@material/floating-label': 11.0.0
+      '@material/line-ripple': 11.0.0
+      '@material/notched-outline': 11.0.0
+      '@material/ripple': 11.0.0
+      '@material/rtl': 11.0.0
+      '@material/shape': 11.0.0
+      '@material/theme': 11.0.0
+      '@material/typography': 11.0.0
+      tslib: 2.4.0
+
   '@material/theme@11.0.0':
     dependencies:
       '@material/feature-targeting': 11.0.0
@@ -4930,6 +4989,19 @@ snapshots:
       '@smui/common': 4.2.0
       '@smui/ripple': 4.2.0
 
+  '@smui/textfield@4.2.0':
+    dependencies:
+      '@material/dom': 11.0.0
+      '@material/feature-targeting': 11.0.0
+      '@material/ripple': 11.0.0
+      '@material/rtl': 11.0.0
+      '@material/textfield': 11.0.0
+      '@smui/common': 4.2.0
+      '@smui/floating-label': 4.2.0
+      '@smui/line-ripple': 4.2.0
+      '@smui/notched-outline': 4.2.0
+      '@smui/ripple': 4.2.0
+
   '@traptitech/markdown-it-katex@3.6.0':
     dependencies:
       katex: 0.16.2
@@ -4990,6 +5062,10 @@ snapshots:
 
   '@types/node@18.7.14': {}
 
+  '@types/plantuml-encoder@1.4.2':
+    dependencies:
+      '@types/node': 18.7.14
+
   '@types/pug@2.0.6': {}
 
   '@types/sass@1.43.1':
@@ -5005,6 +5081,8 @@ snapshots:
       '@types/node': 18.7.14
       '@types/source-list-map': 0.1.2
       source-map: 0.7.4
+
+  '@viz-js/viz@3.30.0': {}
 
   '@webassemblyjs/ast@1.11.1':
     dependencies:
@@ -6640,6 +6718,8 @@ snapshots:
   pkg-dir@4.2.0:
     dependencies:
       find-up: 4.1.0
+
+  plantuml-encoder@1.4.0: {}
 
   postcss-modules-extract-imports@3.0.0(postcss@8.4.16):
     dependencies:

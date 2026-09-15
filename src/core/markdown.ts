@@ -14,6 +14,7 @@ import mKatex from '@traptitech/markdown-it-katex'
 import mMermaid from '@md-reader/markdown-it-mermaid'
 import mAlert from '@/plugins/alert'
 import mGraphvizBlock from '@/plugins/graphviz-block'
+import mPlantUmlBlock from '@/plugins/plantuml-block'
 import mMultimdTable from 'markdown-it-multimd-table'
 import MD_PLUGINS from '@/config/md-plugins'
 import successIcon from '@/images/icon_success.svg'
@@ -34,6 +35,7 @@ const PLUGINS: Plugins = {
     mMermaid,
     { theme: theme === 'dark' ? 'dark' : 'default', themeVariables: undefined },
   ],
+  PlantUml: [mPlantUmlBlock],
   Mark: [mMark],
   Deflist: [mDeflist],
   Footnote: [mFootnote],

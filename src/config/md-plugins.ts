@@ -7,6 +7,7 @@ export default [
   'Mark',
   'Katex',
   'Mermaid',
+  'PlantUml',
   'Abbr',
   'Deflist',
   'Footnote',

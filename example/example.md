@@ -267,6 +267,15 @@ gantt
     Task, No. 2      :24d
 ```
 
+### [PlantUML](https://plantuml.com/)
+
+```plantuml
+@startuml
+Alice -> Bob: Hello
+Bob --> Alice: Hi!
+@enduml
+```
+
 ### [Inserted](https://github.com/markdown-it/markdown-it-ins)
 
 ++Inserted text++
@@ -287,7 +296,7 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 
 `*[HTML]: Hyper Text Markup Language`
 
-*[HTML]: Hyper Text Markup Language
+\*[HTML]: Hyper Text Markup Language
 
 ### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
 

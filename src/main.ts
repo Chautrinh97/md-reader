@@ -69,7 +69,7 @@ function main(data: Data) {
   let isSideHover: boolean = false
   let globalEvent: Event = new Event()
 
-  initPlugins({ event: globalEvent })
+  initPlugins({ event: globalEvent, configData })
 
   /* init md page */
   setTheme(configData.pageTheme)
